@@ -16,6 +16,7 @@ it("stores the request in local memory @authorization-server-store-request", () 
 				"Only a single request object should be stored in the `requests` variable for each request made"
 			)
 			const storedRequest = requests[keys[0]]
+			//console.log('--debug----------------'); console.log(keys); console.log(requests)
 			assert.equal(
 				storedRequest.client_id,
 				"my-client",
